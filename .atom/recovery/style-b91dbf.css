@@ -1,0 +1,1975 @@
+/* Revamp inboxReview start */
+.input-append,
+.input-prepend {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.black-54-percent {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.black-38-percent {
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.line-height-18px {
+	line-height: 18px;
+}
+
+#inboxReview--desktop .label-seller,
+#inboxReview--desktop .label-buyer {
+	line-height: 1em;
+	padding: 4px 6px;
+	color: #fff;
+	font-size: 10px;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+#inboxReview--desktop .label-seller {
+	background: #d50000;
+}
+
+#inboxReview--desktop .label-buyer {
+	background: #2ab4c2;
+}
+
+.display-table {
+	display: table;
+}
+
+.display-table-cell {
+	display: table-cell;
+}
+
+.display-table-row {
+	display: table-row;
+}
+
+.vertical-top {
+	vertical-align: top;
+}
+
+.vertical-middle {
+	vertical-align: middle;
+}
+
+#inboxReview--desktop .notification-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #d50000;
+	border-radius: 10px;
+}
+
+#inboxReview--desktop .inboxReview__wrapper {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.inboxReview__tab {
+	border-bottom: solid 1px #e0e0e0;
+}
+
+.inboxReview__tab > ul > li {
+	display: inline-block;
+}
+
+.inboxReview__tab > ul > li.active {
+	border-bottom: 2px solid #42b549;
+}
+
+.inboxReview__tab > ul > li > a {
+	padding: 14px 20px 17px;
+	line-height: 1em;
+}
+
+.inboxReview__tab a {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.inboxReview__tab .active a {
+	color: #42b549;
+}
+
+.inboxReview__content {
+	box-sizing: border-box;
+	padding: 15px 20px;
+}
+
+.inboxReview__content .inboxReview__filter #keyword::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+.inboxReview__content .inboxReview__filter #keyword::-moz-placeholderr {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+.inboxReview__content .inboxReview__filter #keyword:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+.inboxReview__content .inboxReview__filter #keyword:-moz-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+.inboxReview__content .inboxReview__filter #btn-search-reputation {
+	background: #f4f4f4;
+	border: 1px solid #e0e0e0;
+}
+
+.inboxReview__content
+	.inboxReview__filter
+	#btn-search-reputation
+	.icon-search-green {
+	background: url('../img/icon_sprite_magnifier@2x.png') no-repeat;
+	background-size: 88px 36px;
+	background-position: -35px -8px;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.inboxReview__content .inboxReview__list > ul > li:not(:first-child) {
+	margin-top: 20px;
+}
+
+.give-review-title {
+	font-weight: 600;
+	display: inline-block;
+	margin-bottom: 0;
+	line-height: 1em;
+	vertical-align: middle;
+	font-size: 13px;
+}
+
+.inboxReviewBox {
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+}
+
+.inboxReviewBox .inboxReviewBox__header {
+	background-color: #f9f9f9;
+	height: 37px;
+	line-height: 37px;
+	padding: 0 24px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.inboxReviewBox .inboxReviewBox__header .inboxReviewBox__header--left {
+	height: 100%;
+}
+
+.inboxReviewBox .inboxReviewBox__header .inboxReviewBox__header--right {
+	color: rgba(0, 0, 0, 0.38);
+	height: 100%;
+}
+
+.inboxReviewBox
+	.inboxReviewBox__header
+	.inboxReviewBox__header--left
+	.badges-lib {
+	float: none;
+	margin-bottom: -3px;
+}
+
+.inboxReviewBox .inboxReviewBox__body {
+	display: table;
+	width: 100%;
+}
+
+.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--left,
+.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--right {
+	display: table-cell;
+	vertical-align: top;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--right {
+	height: inherit;
+}
+
+.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--left {
+	width: 300px;
+	border-right: 1px solid #e0e0e0;
+	padding: 17px 13px 0;
+}
+
+.inboxReviewBox__body--left .shop-information {
+	display: table;
+	border-bottom: 1px solid #e0e0e0;
+	width: 100%;
+}
+
+.inboxReviewBox__body--left .shop-information .img-wrapper {
+	display: table-cell;
+	vertical-align: top;
+	width: 48px;
+}
+
+.inboxReviewBox__body--left .shop-information .img-wrapper > img {
+	width: 48px;
+	height: 48px;
+}
+
+.inboxReviewBox__body--left .shop-information .shop-name {
+	height: 15px;
+	display: block;
+	line-height: 1em;
+	overflow: hidden;
+	padding-right: 5px;
+	max-width: 110px;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+
+.inboxReviewBox__body--left .shop-information .badges-lib {
+	margin: 2px 0 0 10px;
+}
+
+.inboxReviewBox__body--left .shop-information .favorite-wrapper {
+	width: 1px;
+}
+
+.inboxReviewBox__body--left .shop-reputation {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 5px 0;
+	position: relative;
+}
+
+.inboxReviewBox__body--left .shop-reputation .rep-notice {
+	line-height: 1.5em;
+	padding: 5px;
+}
+
+.inboxReviewBox__body--left .shop-reputation .notice--gray {
+	background: #f1f1f1;
+}
+
+.inboxReviewBox__body--left .shop-reputation .notice--red {
+	background: #ffe5e5;
+}
+
+.inboxReviewBox__body--left .shop-reputation .edit-smiley {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.inboxReviewBox__body--left .shop-reputation .smiley-reputation-confirm {
+	position: absolute;
+	background: #fff;
+	top: 5px;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	display: none;
+	z-index: 2;
+}
+
+.inboxReviewBox__body--left .shop-reputation .cover-wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.inboxReviewBox__body--left .shop-reputation .cover-wrapper .cover-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inboxReviewBox__body--left .shop-reputation .smiley-reputation-response {
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	display: none;
+	z-index: 3;
+	background: #f3fef3;
+}
+
+.shop-reputation .smiley-reputation-confirm .rep-given {
+	font-weight: 600;
+}
+
+.shop-reputation .smiley-reputation-confirm .rep-given.happy {
+	color: #38aa39;
+}
+
+.shop-reputation .smiley-reputation-confirm .rep-given.neutral {
+	color: #f6b323;
+}
+
+.shop-reputation .smiley-reputation-confirm .rep-given.sad {
+	color: #d50000;
+}
+
+.shop-reputation .smiley-reputation-confirm .confirm-ok,
+.shop-reputation .smiley-reputation-confirm .confirm-no {
+	width: 100px;
+}
+
+.inboxReviewBox__body--left .seller-feedback {
+	display: table;
+	width: 100%;
+}
+
+.inboxReviewBox__body--left .seller-feedback .seller-feedback__wrapper {
+	height: 32px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.inboxReviewBox__body--left
+	.seller-feedback
+	.seller-feedback__wrapper
+	.icon-smiley--small {
+	vertical-align: middle;
+}
+
+.inboxReviewBox__body--right .product-review__wrapper {
+	position: absolute;
+	padding: 17px 13px;
+	box-sizing: border-box;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.inboxReviewBox__body--right .product-review__wrapper .heading {
+	color: rgba(0, 0, 0, 0.54);
+	font-weight: 600;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	.product-review__list-wrapper {
+	height: calc(100% - 30px);
+	position: relative;
+}
+
+.inboxReviewBox__body--right .product-review__wrapper ul.product-review__list {
+	height: 100%;
+	max-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li {
+	display: table;
+	width: 100%;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li:not(:first-child) {
+	margin-top: 10px;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.product-review__table-cell {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.product-review__img-wrapper {
+	width: 60px;
+	position: relative;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.product-review__img-wrapper
+	> img {
+	width: 60px;
+	height: 60px;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.product-review__img-wrapper
+	> .notification-dot {
+	position: absolute;
+	right: -4px;
+	top: -4px;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.inboxReviewBox__product-detail {
+	max-width: 200px;
+	box-sizing: border-box;
+	padding: 2px 10px 0 0;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.inboxReviewBox__product-detail
+	.star-wrapper {
+	font-size: 11px;
+}
+
+.inboxReviewBox__body--right
+	.product-review__wrapper
+	ul.product-review__list
+	li
+	.inboxReviewBox__product-detail
+	.product-name
+	a {
+	line-height: 1.5em;
+	max-height: 3em;
+	word-wrap: break-word;
+	overflow: hidden;
+	display: block;
+}
+
+.icon-smiley--small {
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-smiley--medium {
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	min-height: 40px;
+	display: inline-block;
+}
+
+.icon-smiley--medium__wrapper li:not(:first-child) {
+	margin-left: 30px;
+}
+
+.inboxReview__wrapper .icon-smiley--medium + p {
+	font-family: 'open sans', tahoma, sans-serif;
+	line-height: 1em;
+}
+
+.icon-smiley--medium.icon-smiley-happy--unselected {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23BDBDBD%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23BDBDBD%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Happy-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M16.38%2C26.8c.87%2C5.45%2C8.87%2C5.45%2C9.75%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	cursor: pointer;
+}
+
+.icon-smiley--medium.icon-smiley-neutral--unselected {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23BDBDBD%3Bstroke-linecap%3Around%3B%7D.cls-4%7Bstroke-linejoin%3Around%3Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23BDBDBD%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-miterlimit%3A10%3Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Neutral-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cline%20class%3D%22cls-8%22%20x1%3D%2216.25%22%20y1%3D%2227.88%22%20x2%3D%2226.25%22%20y2%3D%2227.88%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	cursor: pointer;
+}
+
+.icon-smiley--medium.icon-smiley-sad--unselected {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23BDBDBD%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23BDBDBD%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C24.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C24.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Sad-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2215.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2215.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M16.38%2C30.89c.87-5.45%2C8.87-5.45%2C9.75%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	cursor: pointer;
+}
+
+.icon-smiley--medium.icon-smiley-happy--selected,
+.icon-smiley--medium.icon-smiley-happy--unselected:hover {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%2342B549%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%2342B549%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Happy-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M16.38%2C26.8c.87%2C5.45%2C8.87%2C5.45%2C9.75%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--medium.icon-smiley-neutral--selected,
+.icon-smiley--medium.icon-smiley-neutral--unselected:hover {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23F6B323%3Bstroke-linecap%3Around%3B%7D.cls-4%7Bstroke-linejoin%3Around%3Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23F6B323%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-miterlimit%3A10%3Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Neutral-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cline%20class%3D%22cls-8%22%20x1%3D%2216.25%22%20y1%3D%2227.88%22%20x2%3D%2226.25%22%20y2%3D%2227.88%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--medium.icon-smiley-sad--selected,
+.icon-smiley--medium.icon-smiley-sad--unselected:hover {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23D50000%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23D50000%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C24.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C24.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Sad-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2215.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2215.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M16.38%2C30.89c.87-5.45%2C8.87-5.45%2C9.75%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--medium.icon-smiley-happy--disabled {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23E0E0E0%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23E0E0E0%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Happy-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M16.38%2C26.8c.87%2C5.45%2C8.87%2C5.45%2C9.75%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	cursor: not-allowed;
+}
+
+.icon-smiley--medium.icon-smiley-neutral--disabled {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23E0E0E0%3Bstroke-linecap%3Around%3B%7D.cls-4%7Bstroke-linejoin%3Around%3Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23E0E0E0%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-miterlimit%3A10%3Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C23.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Neutral-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2214.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cline%20class%3D%22cls-8%22%20x1%3D%2216.25%22%20y1%3D%2227.88%22%20x2%3D%2226.25%22%20y2%3D%2227.88%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	cursor: not-allowed;
+}
+
+.icon-smiley--medium.icon-smiley-sad--disabled {
+	background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2042.5%2042.5%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23E0E0E0%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2.5px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23E0E0E0%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M12.9%2C24.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M29.6%2C24.14a1.82%2C1.82%2C0%2C1%2C0-1.82-1.82%2C1.82%2C1.82%2C0%2C0%2C0%2C1.82%2C1.82%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Sad-Big%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%2221.25%22%20cy%3D%2221.25%22%20r%3D%2220%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.08%22%20y%3D%2215.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%2222.78%22%20y%3D%2215.5%22%20width%3D%2213.64%22%20height%3D%2213.64%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M16.38%2C30.89c.87-5.45%2C8.87-5.45%2C9.75%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+	cursor: not-allowed;
+}
+
+.icon-smiley--small.icon-smiley-happy--unselected {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23BDBDBD%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23BDBDBD%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Happy-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M7.3%2C9.9a1.73%2C1.73%2C0%2C0%2C0%2C3.4%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-happy--selected {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%2342b549%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%2342b549%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Happy-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M7.3%2C9.9a1.73%2C1.73%2C0%2C0%2C0%2C3.4%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-happy--disabled {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-8%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-8%7Bstroke%3A%23E0E0E0%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2px%3B%7D.cls-5%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-6%7Bfill%3A%23E0E0E0%3B%7D.cls-7%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D.cls-8%7Bstroke-width%3A1.25px%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Happy-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-5%22%3E%3Crect%20class%3D%22cls-6%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-7%22%3E%3Crect%20class%3D%22cls-6%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-8%22%20d%3D%22M7.3%2C9.9a1.73%2C1.73%2C0%2C0%2C0%2C3.4%2C0%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-neutral--unselected {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-5%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-5%7Bstroke%3A%23BDBDBD%3Bstroke-linecap%3Around%3B%7D.cls-4%7Bstroke-linejoin%3Around%3Bstroke-width%3A2px%3B%7D.cls-5%7Bstroke-miterlimit%3A10%3B%7D.cls-6%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-7%7Bfill%3A%23BDBDBD%3B%7D.cls-8%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Neutral-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cline%20class%3D%22cls-5%22%20x1%3D%227.25%22%20y1%3D%2210.32%22%20x2%3D%2210.75%22%20y2%3D%2210.32%22/%3E%3Cg%20class%3D%22cls-6%22%3E%3Crect%20class%3D%22cls-7%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-8%22%3E%3Crect%20class%3D%22cls-7%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-neutral--selected {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-5%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-5%7Bstroke%3A%23f6b323%3Bstroke-linecap%3Around%3B%7D.cls-4%7Bstroke-linejoin%3Around%3Bstroke-width%3A2px%3B%7D.cls-5%7Bstroke-miterlimit%3A10%3B%7D.cls-6%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-7%7Bfill%3A%23f6b323%3B%7D.cls-8%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Neutral-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cline%20class%3D%22cls-5%22%20x1%3D%227.25%22%20y1%3D%2210.32%22%20x2%3D%2210.75%22%20y2%3D%2210.32%22/%3E%3Cg%20class%3D%22cls-6%22%3E%3Crect%20class%3D%22cls-7%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-8%22%3E%3Crect%20class%3D%22cls-7%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-neutral--disabled {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-5%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-5%7Bstroke%3A%23E0E0E0%3Bstroke-linecap%3Around%3B%7D.cls-4%7Bstroke-linejoin%3Around%3Bstroke-width%3A2px%3B%7D.cls-5%7Bstroke-miterlimit%3A10%3B%7D.cls-6%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-7%7Bfill%3A%23E0E0E0%3B%7D.cls-8%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Neutral-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cline%20class%3D%22cls-5%22%20x1%3D%227.25%22%20y1%3D%2210.32%22%20x2%3D%2210.75%22%20y2%3D%2210.32%22/%3E%3Cg%20class%3D%22cls-6%22%3E%3Crect%20class%3D%22cls-7%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-8%22%3E%3Crect%20class%3D%22cls-7%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-sad--unselected {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-5%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-5%7Bstroke%3A%23BDBDBD%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2px%3B%7D.cls-5%7Bstroke-width%3A1.25px%3B%7D.cls-6%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-7%7Bfill%3A%23BDBDBD%3B%7D.cls-8%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Sad-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-5%22%20d%3D%22M7.3%2C11.33a1.73%2C1.73%2C0%2C0%2C1%2C3.4%2C0%22/%3E%3Cg%20class%3D%22cls-6%22%3E%3Crect%20class%3D%22cls-7%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-8%22%3E%3Crect%20class%3D%22cls-7%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-sad--selected {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-5%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-5%7Bstroke%3A%23d50000%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2px%3B%7D.cls-5%7Bstroke-width%3A1.25px%3B%7D.cls-6%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-7%7Bfill%3A%23d50000%3B%7D.cls-8%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Sad-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-5%22%20d%3D%22M7.3%2C11.33a1.73%2C1.73%2C0%2C0%2C1%2C3.4%2C0%22/%3E%3Cg%20class%3D%22cls-6%22%3E%3Crect%20class%3D%22cls-7%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-8%22%3E%3Crect%20class%3D%22cls-7%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-smiley--small.icon-smiley-sad--disabled {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20viewBox%3D%220%200%2018.03%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-2%2C.cls-4%2C.cls-5%7Bfill%3Anone%3B%7D.cls-2%7Bclip-rule%3Aevenodd%3B%7D.cls-3%7Bclip-path%3Aurl%28%23clip-path%29%3B%7D.cls-4%2C.cls-5%7Bstroke%3A%23E0E0E0%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D.cls-4%7Bstroke-width%3A2px%3B%7D.cls-5%7Bstroke-width%3A1.25px%3B%7D.cls-6%7Bclip-path%3Aurl%28%23clip-path-2%29%3B%7D.cls-7%7Bfill%3A%23E0E0E0%3B%7D.cls-8%7Bclip-path%3Aurl%28%23clip-path-3%29%3B%7D%3C/style%3E%3CclipPath%20id%3D%22clip-path%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-2%22%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M5.88%2C9.14A.88.88%2C0%2C1%2C0%2C5%2C8.26a.87.87%2C0%2C0%2C0%2C.88.88%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22clip-path-3%22%3E%3Ccircle%20class%3D%22cls-1%22%20cx%3D%2212.16%22%20cy%3D%228.26%22%20r%3D%220.88%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ctitle%3ESmiley-Sad-Small%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22FIX_ICON%22%20data-name%3D%22FIX%20ICON%22%3E%3Cg%20class%3D%22cls-3%22%3E%3Ccircle%20class%3D%22cls-4%22%20cx%3D%229%22%20cy%3D%228%22%20r%3D%227%22/%3E%3C/g%3E%3Cpath%20class%3D%22cls-5%22%20d%3D%22M7.3%2C11.33a1.73%2C1.73%2C0%2C0%2C1%2C3.4%2C0%22/%3E%3Cg%20class%3D%22cls-6%22%3E%3Crect%20class%3D%22cls-7%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3Cg%20class%3D%22cls-8%22%3E%3Crect%20class%3D%22cls-7%22%20x%3D%226.28%22%20y%3D%222.39%22%20width%3D%2211.75%22%20height%3D%2211.75%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.icon-checked-alt-2 {
+	background-image: url('data:image/svg+xml, %3Csvg%20width%3D%2212px%22%20height%3D%228px%22%20viewBox%3D%220%200%2012%208%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20sketchtool%2042%20%2836781%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3E6A7E8259-5750-4C96-BF6E-62502B34884F%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20sketchtool.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Symbols%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Symbol-/-Check-/-Grey%22%20stroke-width%3D%221.25%22%20stroke%3D%22%23BDBDBD%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolyline%20id%3D%22Icon-Check-%22%20points%3D%2212.064%200%204.243%207.821%200%203.579%22%3E%3C/polyline%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
+	width: 12px;
+	height: 10px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.inboxReview__select-option {
+	max-width: 125px;
+	border: 1px solid #e0e0e0;
+}
+
+.inboxReview__select-option:active,
+.inboxReview__select-option:focus {
+	border: 1px solid #e0e0e0;
+}
+
+.inboxReview__select-option .selectBox-arrow {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAOBAMAAABeLhj4AAAAJFBMVEUAAABmZmZnZ2dnZ2doaGhnZ2doaGhoaGhoaGhmZmZnZ2dmZmaU2qnPAAAAC3RSTlMA6V5lL1gpJB3z3ZHQLrgAAAB0SURBVBjTY+BQYIACpgYGGOjaDGNZr4ALFu42gDCYd4vDBdmloUqtNxYwICuFKUQANulNIEp7YwIDEkjcrQC0ercYmINQupWBIRqiEAEcdwew7hZhQAUs0lujNzrAeAilCIUIpbN3oikEu2cTAyZgUkDhAgCNpxhgcieAIQAAAABJRU5ErkJggg==')
+		90% center no-repeat;
+	width: 32px;
+	height: 28px;
+	background-size: 22px 8px;
+	opacity: 0.7;
+}
+
+.inboxReview__select-option-selectBox-dropdown-menu {
+	border: 1px solid #e0e0e0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.inboxReview__select-option-selectBox-dropdown-menu li.selectBox-hover a,
+.inboxReview__select-option-selectBox-dropdown-menu li.selectBox-selected a {
+	background: #f9f9f9;
+	color: inherit;
+}
+
+.inboxReview__select-option-selectBox-dropdown-menu,
+.inboxReview__select-option-selectBox-dropdown-menu li,
+.inboxReview__select-option-selectBox-dropdown-menu li a {
+	color: inherit;
+}
+
+.inboxReview__pagination {
+	display: table;
+	border-collapse: collapse;
+	float: right;
+}
+
+.inboxReview__pagination li {
+	display: table-cell;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+}
+
+.inboxReview__pagination li a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 10px;
+	display: block;
+}
+
+.inboxReview__pagination li.active a,
+.inboxReview__pagination li a:hover {
+	background: #f9f9f9;
+}
+
+.inboxReview__pagination li.active a {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.inboxReview__pagination li i {
+	font-size: 15px;
+	vertical-align: middle;
+	line-height: 30px;
+	margin-top: -2px;
+}
+
+.user-reputation-tooltip {
+	border: 1px solid #e0e0e0;
+	padding: 0 5px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-radius: 2px;
+	cursor: pointer;
+	line-height: 17px;
+	height: 21px;
+}
+
+.user-reputation-tooltip .icon-smiley--small {
+	width: 19px;
+	height: 17px;
+	vertical-align: middle;
+}
+
+.user-reputation-tooltip .label-small {
+	line-height: 17px;
+}
+
+.giveReview__form-header {
+	min-width: 450px !important;
+}
+
+.inboxReview__giveRating {
+	display: table-cell;
+	height: 42px;
+}
+
+.inboxReview__giveRating .star {
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+	padding: 0 5px;
+	box-sizing: border-box;
+	font-size: 36px;
+}
+
+.inboxReview__giveRating .star .icon-star,
+.inboxReview__ratingGiven .icon-star {
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.inboxReview__giveRating .star .icon-star-alt,
+.inboxReview__ratingGiven .icon-star-alt {
+	color: #febf35;
+}
+
+.inboxReview__giveRating .star .icon-star-alt {
+	display: none;
+}
+
+.inboxReview__giveRating .star:hover .icon-star-alt {
+	display: block;
+}
+
+.inboxReview__giveRating .star:hover .icon-star {
+	display: none;
+}
+
+.inboxReview__giveRating .star:nth-child(1):hover ~ .star .icon-star-alt,
+.inboxReview__giveRating .star:nth-child(2):hover ~ .star .icon-star-alt,
+.inboxReview__giveRating .star:nth-child(3):hover ~ .star .icon-star-alt,
+.inboxReview__giveRating .star:nth-child(4):hover ~ .star .icon-star-alt {
+	color: #febf35;
+	display: block;
+}
+
+.inboxReview__giveRating .star:nth-child(1):hover ~ .star .icon-star,
+.inboxReview__giveRating .star:nth-child(2):hover ~ .star .icon-star,
+.inboxReview__giveRating .star:nth-child(3):hover ~ .star .icon-star,
+.inboxReview__giveRating .star:nth-child(4):hover ~ .star .icon-star {
+	display: none;
+}
+
+.inboxReview__giveRating .star.active .icon-star-alt {
+	color: #febf35;
+	display: block;
+}
+
+.inboxReview__giveRating .star.active .icon-star {
+	display: none;
+}
+
+.icon-star-alt--fill {
+	color: #febf35;
+}
+
+.icon-star-alt--empty {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.inboxReviewBox__body .inboxReviewBox__productReview > li {
+	position: relative;
+}
+
+.inboxReviewBox__body .inboxReviewBox__productReview > li:not(:first-child) {
+	border-top: 1px solid #e0e0e0;
+}
+
+.inboxReviewBox__body
+	.inboxReviewBox__productReview
+	> li
+	.table-display-wrapper {
+	box-sizing: border-box;
+	display: table;
+	width: 100%;
+	position: relative;
+	padding: 16px 24px;
+}
+
+.inboxReviewBox__body .inboxReviewBox__productReview > li .giveReview__form {
+	display: none;
+}
+
+.inboxReviewBox__body
+	.inboxReviewBox__productReview
+	> li
+	.giveReview__form
+	.button-wrapper {
+	border-top: 1px solid #e0e0e0;
+}
+
+.inboxReviewBox__body
+	.inboxReviewBox__productReview
+	> li
+	.giveReview__form
+	.button-wrapper
+	.btn {
+	min-width: 124px;
+	min-height: 40px;
+}
+
+.inboxReviewBox__productReview > li .productReview--productPicture {
+	display: table-cell;
+	vertical-align: top;
+	width: 80px;
+}
+
+.inboxReviewBox__productReview > li .productReview--productPicture > img {
+	width: 80px;
+	height: 80px;
+}
+
+.report-product-review {
+	position: absolute;
+	right: 0;
+}
+
+.productReview__review {
+	display: table;
+	width: 100%;
+}
+
+.reviewDetail-product-name {
+	padding-right: 70px;
+	display: block;
+}
+
+.productReview__review .input-wrapper {
+	margin-right: 10px;
+}
+
+.productReview__review .input-wrapper textarea.prodReview--review {
+	height: 125px;
+	resize: none;
+	padding: 7px 10px;
+}
+
+.productReview__review .input-wrapper textarea.prodReview--review:focus {
+	border-color: #42b549;
+}
+
+.productReview__review .guide-wrapper {
+	display: table-cell;
+	vertical-align: top;
+	width: 200px;
+}
+
+.productReview__review .guide-wrapper .guide-title {
+	font-weight: 400;
+}
+
+.productReview__review .guide-wrapper .guide-lists {
+	display: table;
+	width: 100%;
+}
+
+.productReview__review .guide-wrapper .guide-lists > li {
+	display: table-row;
+}
+
+.productReview__review .guide-wrapper .guide-lists > li .guide-bullet-wrapper {
+	display: table-cell;
+	text-align: left;
+}
+
+.productReview__review .guide-wrapper .guide-lists > li .guide-content-wrapper {
+	display: table-cell;
+	font-size: 10px;
+	padding-left: 5px;
+	line-height: normal;
+}
+
+.inboxReview__anonymous {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.inboxReview__anonymous .anonymous-holder {
+	display: inline-block;
+	position: relative;
+	height: 42px;
+	vertical-align: middle;
+}
+
+.inboxReview__anonymous .anonymous-holder .anonymous-wrapper {
+	border: 1px solid #e0e0e0;
+	display: inline-block;
+	border-radius: 3px;
+	vertical-align: middle;
+	width: 235px;
+	max-width: 235px;
+}
+
+.inboxReview__anonymous .anonymous-holder .anonymous-wrapper .user-image {
+	width: 28px;
+	height: 28px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	.user-image.anonymous {
+	background: #ccc;
+	text-align: center;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	.user-image.anonymous
+	.icon {
+	color: #e0e0e0;
+	font-size: 23px;
+	vertical-align: bottom;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	.anonymous-selected {
+	padding: 6px 40px 6px 6px;
+	position: relative;
+	cursor: pointer;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	ul.anonymous-options {
+	width: 235px;
+	max-width: 235px;
+	background: #fff;
+	display: none;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	ul.anonymous-options
+	> li {
+	border-top: 1px solid #e0e0e0;
+	padding: 0 6px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	.anonymous-selected:hover,
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	ul.anonymous-options
+	> li:hover {
+	background: #f9f9f9;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	ul.anonymous-options
+	> li
+	.img-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	height: inherit;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	ul.anonymous-options
+	> li
+	.detail-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 5px;
+	line-height: 1em;
+	height: inherit;
+}
+
+.inboxReview__anonymous
+	.anonymous-holder
+	.anonymous-wrapper
+	ul.anonymous-options
+	> li
+	.detail-wrapper
+	.reviewer-name {
+	width: 180px;
+	line-height: 1em;
+}
+
+.inboxReview__anonymous .dropdown-arrow {
+	background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACcAAAAOBAMAAABeLhj4AAAAJFBMVEUAAABmZmZnZ2dnZ2doaGhnZ2doaGhoaGhoaGhmZmZnZ2dmZmaU2qnPAAAAC3RSTlMA6V5lL1gpJB3z3ZHQLrgAAAB0SURBVBjTY+BQYIACpgYGGOjaDGNZr4ALFu42gDCYd4vDBdmloUqtNxYwICuFKUQANulNIEp7YwIDEkjcrQC0ercYmINQupWBIRqiEAEcdwew7hZhQAUs0lujNzrAeAilCIUIpbN3oikEu2cTAyZgUkDhAgCNpxhgcieAIQAAAABJRU5ErkJggg==')
+		90% center no-repeat;
+	width: 32px;
+	height: 100%;
+	background-size: 22px 8px;
+	opacity: 0.7;
+	position: absolute;
+	right: 5px;
+	top: 0;
+}
+
+#inboxReview--desktop .uploadPhotos > ul > li {
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+	border-radius: 3px;
+	background-position: center center;
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#inboxReview--desktop .uploadPhotos > ul > li:last-child {
+	margin-right: 0;
+}
+
+#inboxReview--desktop .uploadPhotos .uploadPhotos__tile {
+	width: 90px;
+	height: 90px;
+	padding: 3px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#inboxReview--desktop .uploadPhotos .uploadPhotos__tile .img-wrapper {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.05);
+	cursor: default;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+}
+
+#inboxReview--desktop
+	.uploadPhotos
+	.uploadPhotos__uploaded
+	.img-wrapper
+	.thumbnail {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	cursor: pointer;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-ms-transform: translateY(-50%) translateX(-50%);
+	-o-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}
+
+#inboxReview--desktop .uploadPhotos .uploadPhotos__input .img-wrapper {
+	background-image: url(../img/icon/icon-upload-photo.png);
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+	background-position: center;
+	cursor: pointer;
+}
+
+#inboxReview--desktop .uploadPhotos__actions {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(249, 249, 249, 0.9);
+	display: table;
+	table-layout: fixed;
+	position: absolute;
+	bottom: 0;
+	opacity: 1;
+	cursor: default;
+	padding: 5px;
+	line-height: 1em;
+	z-index: 2;
+	box-sizing: border-box;
+}
+
+#inboxReview--desktop .uploadPhotos__actions > li .icon {
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+#inboxReview--desktop .uploadPhotos__actions > li .icon:hover {
+	color: #42b549;
+}
+
+.share-social-toggle-container {
+	display: inline-block;
+	padding-top: 8px;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.share-social-toggle-container li,
+.share-social-toggle-container li:last-child {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.share-social-toggle-container li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.share-social-toggle-container li:hover .text {
+	color: #42b549;
+}
+
+.share-social-toggle-container li:hover .toggle-track {
+	border-color: #aaa;
+}
+
+.share-social-toggle-container li .toggle-track {
+	bottom: -1px;
+}
+
+.share-social-toggle-container li .text {
+	vertical-align: top;
+	color: rgba(0, 0, 0, 0.54);
+	line-height: 24px;
+}
+
+.toggle-box .toggle-track {
+	position: relative;
+	width: 38px;
+	height: 20px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	background-color: #eee;
+	display: inline-block;
+}
+
+.toggle-track .toggle-btn {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	background: #fff;
+	-webkit-transition: left 300ms ease-in-out;
+	-moz-transition: left 300ms ease-in-out;
+	-o-transition: left 300ms ease-in-out;
+	transition: left 300ms ease-in-out;
+}
+
+.toggle-track[data-value='1'] {
+	background: #42b548;
+}
+
+.toggle-track[data-value='1'] .toggle-btn {
+	left: 19px;
+}
+
+.toggle-box--variant .text {
+	vertical-align: top;
+	display: inline-block;
+	font-weight: 700;
+}
+
+.unf-modal--productReview .unf-modal__close .icon {
+	position: relative;
+	font-size: 22px;
+}
+
+.unf-modal--productReview .outer-container {
+	width: 500px;
+}
+
+.prodReview-photo-prev,
+.prodReview-photo-next {
+	background-image: none !important;
+	font-size: 25px;
+	top: 140px;
+	position: absolute;
+	padding: 10px;
+}
+
+.prodReview-photo-prev {
+	left: 20px;
+}
+
+.prodReview-photo-next {
+	right: 20px;
+}
+
+.unf-modal--productReview ul.swiper-wrapper li.swiper-slide {
+	list-style: none;
+}
+
+.unf-modal--productReview ul.swiper-wrapper li.swiper-slide > .display-table {
+	width: 100%;
+}
+
+.unf-modal--productReview .height-70 {
+	height: 70px;
+}
+
+.unf-modal--productReview .photo-label,
+.unf-modal--productReview .photo-wrapper {
+	height: 300px;
+}
+
+.unf-modal--productReview .photo-wrapper {
+	background: #f9f9f9;
+	width: 100%;
+}
+
+.unf-modal--productReview .photo-wrapper > img {
+	max-width: 100%;
+	max-height: 200px;
+	transform: scale(1.5, 1.5);
+}
+
+.unf-modal--productReview input.product-desc {
+	width: 100%;
+	border-color: #e0e0e0;
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.unf-modal--productReview .submit-wrapper .button {
+	width: 48%;
+}
+
+.unf-modal--productReview .unf-modal__content {
+	margin: auto 20px;
+}
+
+.icon-information {
+	background-image: url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23999%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22.99%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill-rule%3D%22nonzero%22%20d%3D%22M9%2017.455A8.454%208.454%200%200%201%20.545%209%208.455%208.455%200%201%201%209%2017.455zM9%200a9%209%200%200%200-9%209%209%209%200%201%200%209-9z%22/%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M9%205.489a1.023%201.023%200%201%201%200-2.046A1.023%201.023%200%200%201%209%205.49M9%2014.489a.682.682%200%200%201-.682-.682V7.534a.682.682%200%200%201%201.364%200v6.273a.682.682%200%200%201-.682.682%22/%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M7.364%2013.807c0-.377.305-.682.681-.682h1.91a.682.682%200%200%201%200%201.364h-1.91a.682.682%200%200%201-.681-.682M7.364%207.534c0-.376.305-.682.681-.682H9a.682.682%200%200%201%200%201.364h-.955a.682.682%200%200%201-.681-.682%22/%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A');
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.replyProductReview__form {
+	display: block;
+}
+
+.replyProdReview__wrapper {
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	display: table;
+	width: 100%;
+	padding: 16px;
+	padding-right: 0;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+.replyProdReview__wrapper .img-wrapper {
+	width: 48px;
+}
+
+.replyProdReview__wrapper .img-wrapper img {
+	width: 48px;
+	height: 48px;
+}
+
+.replyProdReview__wrapper .textinput-wrapper {
+	padding: 0 12px;
+	position: relative;
+}
+
+.replyProdReview__wrapper .textinput-wrapper textarea {
+	width: 100%;
+	box-sizing: border-box;
+	height: 90px;
+	resize: none;
+	padding: 7px 10px;
+}
+
+.replyProdReview__wrapper .textinput-wrapper .sellerReview-action-wrapper {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+
+.replyProdReview__wrapper .btn-wrapper {
+	display: table-cell;
+	width: 185px;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.replyProdReview__wrapper .btn-wrapper .btn {
+	min-width: 48%;
+	min-height: 40px;
+}
+
+.custom-tooltip--white + .tooltip.in {
+	opacity: 1 !important;
+}
+
+.custom-tooltip--white + .tooltip > .tooltip-inner {
+	background-color: #fff;
+	border: 1px solid #e0e0e0;
+	color: rgba(0, 0, 0, 0.54);
+	white-space: nowrap;
+	padding: 5px 10px;
+}
+
+.custom-tooltip--white + .tooltip > .tooltip-arrow {
+	border-top-color: transparent;
+	position: absolute;
+	bottom: 6px;
+	left: 50%;
+}
+
+.custom-tooltip--white + .tooltip > .tooltip-arrow::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid #e0e0e0;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	position: absolute;
+	left: -5px;
+	margin: auto;
+}
+
+.custom-tooltip--white + .tooltip > .tooltip-arrow::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	border-top: 4px solid white;
+	border-bottom: 4px solid transparent;
+	left: -4px;
+	position: absolute;
+}
+
+ul.shareReview--list {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+ul.shareReview--list li {
+	margin: 0;
+	display: inline-block;
+}
+
+ul.shareReview--list li:not(:first-child) {
+	margin-left: 6px;
+}
+
+ul.shareReview--list li a {
+	color: #fff;
+	width: 24px;
+	height: 24px;
+	font-size: 12px;
+	display: inline-block;
+	text-align: center;
+}
+
+ul.shareReview--list li a.toped-link {
+	background: #008100;
+}
+
+ul.shareReview--list li a.fb-link {
+	background: #385b9d;
+}
+
+.review-thanks-overlay {
+	background: #f3fef3;
+	position: absolute;
+	padding: 16px 24px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.review-thanks-overlay .title {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	margin-top: 5px;
+}
+
+.review-thanks-overlay .subtitle {
+	font-size: 11px;
+	line-height: 1.4em;
+}
+
+.review-thanks-overlay .close-this {
+	border: 1px solid #42b549;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 16px;
+	right: 24px;
+}
+
+.user-reputation-information {
+	border: 1px solid #e0e0e0;
+	position: absolute;
+	display: none;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: 999;
+	margin-top: -20px;
+}
+
+.user-reputation-information .arrow {
+	position: absolute;
+	top: 20px;
+}
+
+.user-reputation-information .arrow::before {
+	content: '';
+	border-right: 10px solid #e0e0e0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+	height: 0;
+	width: 0;
+	right: 0;
+	position: absolute;
+}
+
+.user-reputation-information .arrow::after {
+	content: '';
+	border-right: 10px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+	height: 0;
+	width: 0;
+	right: -2px;
+	position: absolute;
+}
+
+.user-reputation-table {
+	width: 100%;
+	background: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.user-reputation-table tr td {
+	font-size: 10px;
+	padding: 0 5px;
+}
+
+.user-reputation-tooltip:hover + .user-reputation-information {
+	display: inline-block;
+}
+
+.user-reputation-table tr td * {
+	vertical-align: middle;
+}
+
+.user-reputation-table tr td.rep-happy {
+	color: #38aa39;
+}
+
+.user-reputation-table tr td.rep-neutral {
+	color: #f2a51c;
+}
+
+.user-reputation-table tr td.rep-sad {
+	color: #c80005;
+}
+
+.reviewReport--form .submit-wrapper .button,
+.confirm-btn-wrapper .button {
+	width: 124px;
+	height: 40px;
+	box-sizing: border-box;
+	margin: 0 10px;
+}
+
+.unf-modal--reportReview .submit-wrapper .unf-btn--green,
+.unf-modal--deleteReply .confirm-btn-wrapper .unf-btn--green,
+.unf-modal--productReview .submit-wrapper .unf-btn--green {
+	border: 1px solid #42b549;
+}
+
+.input-radio {
+	position: relative;
+}
+
+.input-radio::before,
+.input-radio::after {
+	display: inline-block;
+	border-radius: 50%;
+	content: '';
+}
+
+.input-radio::before {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #bbb;
+	background: #f8f8f8;
+	position: relative;
+}
+
+input[type='radio']:checked + .input-radio::before {
+	border-color: #42b549;
+	background: #fff;
+}
+
+input[type='radio']:checked + .input-radio::after {
+	width: 12px;
+	height: 12px;
+	background: #42b549;
+	position: absolute;
+	top: -1px;
+	left: 3px;
+}
+
+.unf-modal--reportReview .report-textarea {
+	resize: none;
+	height: 72px;
+}
+
+.hole {
+	box-shadow: 0 0 0 9999px rgba(28, 28, 28, 0.7);
+	-webkit-box-shadow: 0 0 0 9999px rgba(28, 28, 28, 0.7);
+	-moz-box-shadow: 0 0 0 9999px rgba(28, 28, 28, 0.7);
+	z-index: 1032;
+	position: relative;
+	pointer-events: initial !important;
+}
+
+.hole:not(.tab) {
+	border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.hopscotch-bubble-container {
+	pointer-events: initial !important;
+}
+
+.hopscotch-bubble-number {
+	display: none !important;
+}
+
+.hopscotch-bubble-arrow-border {
+	visibility: hidden !important;
+}
+
+.hopscotch-bubble {
+	border: none !important;
+}
+
+.hopscotch-bubble .hopscotch-nav-button {
+	padding: 3px 15px !important;
+	font-size: 13px !important;
+}
+
+.hopscotch-bubble .hopscotch-title {
+	font-size: 14px !important;
+}
+
+div.hopscotch-bubble .hopscotch-bubble-close {
+	background: transparent
+		url('data:image/svg+xml, %0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2342b549%3B%7D%3C/style%3E%3C/defs%3E%3Ctitle%3EAsset%2052%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_7%22%20data-name%3D%22Layer%207%22%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M5.18%2C11.29a.47.47%2C0%2C0%2C1-.33-.8l5.65-5.65a.47.47%2C0%2C0%2C1%2C.67.67L5.51%2C11.16A.47.47%2C0%2C0%2C1%2C5.18%2C11.29Z%22/%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M10.82%2C11.29a.47.47%2C0%2C0%2C1-.33-.14L4.84%2C5.51a.47.47%2C0%2C0%2C1%2C.67-.67l5.65%2C5.65a.47.47%2C0%2C0%2C1-.33.8Z%22/%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M8%2C16a8%2C8%2C0%2C1%2C1%2C8-8A8%2C8%2C0%2C0%2C1%2C8%2C16ZM8%2C.94A7.06%2C7.06%2C0%2C1%2C0%2C15.06%2C8%2C7.07%2C7.07%2C0%2C0%2C0%2C8%2C.94Z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')
+		no-repeat;
+	width: 6px;
+	height: 6px;
+	top: 5px;
+	right: 5px;
+}
+div.hopscotch-bubble .hopscotch-content {
+	font-family: 'Open Sans' !important;
+}
+
+.hopscotch-bubble-content {
+	font-size: 12px !important;
+	margin-left: 0px !important;
+}
+
+/*
+    Image Editor Sprites
+    Author: Fritzki Darman
+*/
+
+.picture-action {
+	width: 16px;
+	height: 16px;
+	background: url('../img/newtkpd/add-product-images-sprites.png') no-repeat;
+	display: block;
+	margin: 0 auto;
+}
+
+.picture-action--primary {
+	background-position: 0 0;
+}
+
+.picture-action--primary:hover,
+.picture-action--primary.active {
+	background-position: 0 -17px;
+}
+
+.picture-action--edit {
+	background-position: -17px 0;
+}
+
+.picture-action--edit:hover,
+.picture-action--edit.active {
+	background-position: -17px -17px;
+}
+
+.picture-action--description {
+	background-position: -34px 0;
+}
+
+.picture-action--description:hover,
+.picture-action--description.active {
+	background-position: -34px -17px;
+}
+
+.picture-action--delete {
+	width: 13px;
+	background-position: -117px 0;
+}
+
+.picture-action--delete:hover,
+.picture-action--delete.active {
+	background-position: -117px -17px;
+}
+
+.picture-action--zoom-in {
+	background-position: -51px 0;
+}
+
+.picture-action--zoom-in.active {
+	background-position: -51px -17px;
+}
+
+.picture-action--zoom-out {
+	width: 14px;
+	height: 14px;
+	background-position: -102px 0;
+}
+
+.picture-action--zoom-out.active {
+	background-position: -102px -19px;
+}
+
+.picture-action--rotate-left {
+	background-position: -68px 0;
+}
+
+.picture-action--rotate-left.active {
+	background-position: -68px -17px;
+}
+
+.picture-action--rotate-right {
+	background-position: -85px 0;
+}
+
+.picture-action--rotate-right.active {
+	background-position: -85px -17px;
+}
+
+li.error {
+	border: 1px dashed red !important;
+}
+
+/*
+    end oh photo editor
+*/
+
+@media (min-width: 1200px) {
+	.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--left,
+	.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--right {
+		display: table-cell;
+		vertical-align: top;
+		box-sizing: border-box;
+	}
+	.inboxReviewBox
+		.inboxReviewBox__body
+		.inboxReviewBox__body--right
+		.product-review__wrapper {
+		padding: 17px 24px;
+	}
+	.inboxReviewBox .inboxReviewBox__body .inboxReviewBox__body--left {
+		width: 400px;
+		padding: 17px 24px 0;
+	}
+	.inboxReviewBox
+		.inboxReviewBox__body
+		.inboxReviewBox__body--left
+		.shop-information
+		.shop-name {
+		height: 15px;
+		max-width: 180px;
+	}
+	.inboxReview__select-option {
+		max-width: 160px;
+	}
+	.share-social-toggle-container {
+		margin-right: 200px;
+		padding-right: 30px;
+	}
+	.inboxReviewBox__body--right
+		.product-review__wrapper
+		ul.product-review__list
+		li
+		.product-review__img-wrapper {
+		width: 64px;
+	}
+	.inboxReviewBox__body--right
+		.product-review__wrapper
+		ul.product-review__list
+		li
+		.product-review__img-wrapper
+		> img {
+		width: 64px;
+		height: 64px;
+	}
+	.inboxReviewBox__body--right
+		.product-review__wrapper
+		ul.product-review__list
+		li
+		.inboxReviewBox__product-detail
+		.star-wrapper {
+		font-size: 13px;
+	}
+
+	.textarea-wrapper .template-wrapper .template-list {
+		max-width: 415px;
+	}
+}
+
+/*@media (min-height: 950px) {
+    .unf-modal--productReview .outer-container {
+        width: 800px;
+    }
+    .unf-modal--productReview .photo-label,
+    .unf-modal--productReview .photo-wrapper {
+        height: 400px;
+    }
+    .prodReview-photo-prev,
+    .prodReview-photo-next {
+        top: 190px;
+    }
+}*/
+
+@media (min-width: 800px) {
+	.unf-modal--productReview .outer-container {
+		width: 500px;
+	}
+
+	.unf-modal--productReview .photo-label,
+	.unf-modal--productReview .photo-wrapper {
+		height: 400px;
+	}
+
+	.prodReview-photo-prev,
+	.prodReview-photo-next {
+		top: 190px;
+	}
+
+	.unf-modal--productReview .photo-wrapper > img {
+		transform: scale(2, 2);
+		max-width: 50%;
+		margin-left: 1%;
+	}
+}
+
+@media (max-width: 699px) {
+	.unf-modal--productReview .outer-container {
+		width: 300px;
+	}
+
+	.unf-modal--productReview .photo-label,
+	.unf-modal--productReview .photo-wrapper {
+		height: 400px;
+	}
+
+	.prodReview-photo-prev,
+	.prodReview-photo-next {
+		top: 190px;
+	}
+
+	.unf-modal--productReview .photo-wrapper > img {
+		transform: scale(1.5, 1.5);
+	}
+}
+
+.width-1px {
+	width: 1px;
+}
+
+.visibility-hidden {
+	visibility: hidden;
+}
+
+.unf-modal.unf-modal--confirm-skipReview .unf-modal__inner {
+	margin-top: 18%;
+}
+
+.icon-close-small {
+	border: 1px solid;
+	border-color: inherit;
+	border-radius: 50%;
+	height: 16px;
+	width: 16px;
+	font-size: 15px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 0.8em;
+	padding: 0 0 1px;
+}
+
+.grey-color-link {
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.grey-color-link:hover {
+	color: #42b549;
+}
+
+.prod-list-load-overlay {
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	position: absolute;
+	top: 0;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+}
+
+.banned-prod-image {
+	width: 64px;
+	height: 64px;
+	padding: 3px;
+	box-sizing: border-box;
+	position: relative;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+}
+.banned-prod-image .image {
+	background-size: 70% !important;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed #e0e0e0;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.wb-p--response {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	/*word-break: break-word;*/
+	width: 650px;
+}
+/* Revamp inboxReview end */
+
+/* Response template */
+
+.replyProdReview__wrapper .textinput-wrapper .textarea-wrapper {
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+}
+
+.textarea-wrapper .template-wrapper {
+	background-color: #fff;
+	position: relative;
+	padding-right: 45px;
+}
+
+#onboard-templ-list.show_element {
+	padding: 0;
+}
+
+.textarea-wrapper .template-wrapper .template-setting {
+	padding: 10px;
+	position: absolute;
+	top: 7px;
+	right: 2px;
+	height: 40px;
+	width: 60px;
+	box-sizing: border-box;
+}
+
+.textarea-wrapper .template-wrapper .template-list {
+	max-width: 100%;
+}
+
+.textarea-wrapper .template-wrapper .template-list li {
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin: 0 5px 10px 0;
+	cursor: pointer;
+	position: relative;
+}
+
+.textarea-wrapper .template-wrapper .template-list li:hover {
+	background-color: #f3fef3;
+	border-color: #42b549;
+	color: #42b549;
+}
+
+.textarea-wrapper .template-wrapper .template-list li .icon {
+	vertical-align: middle;
+}
+
+.textarea-wrapper .template-wrapper .template-list li:hover .tooltip-info {
+	display: block;
+}
+
+.template-list li .tooltip-info {
+	background-color: #fff;
+	position: absolute;
+	bottom: 50px;
+	width: 317px;
+	padding: 15px;
+	left: 50%;
+	z-index: 99;
+	border-radius: 3px;
+	display: none;
+	color: rgba(0, 0, 0, 0.54);
+	-webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.template-list li .tooltip-info::before,
+.template-list li .tooltip-info::after {
+	content: '';
+	position: absolute;
+	border-top: 10px solid;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	left: 47%;
+}
+
+.template-list li .tooltip-info::before {
+	border-top-color: rgba(0, 0, 0, 0.15);
+	bottom: -11px;
+}
+
+.template-list li .tooltip-info::after {
+	border-top-color: #fff;
+	bottom: -10px;
+}
+
+.template-list li .tooltip-info .title {
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 5px;
+}
+
+.template-list li .tooltip-info .content {
+	font-size: 14px;
+	word-break: break-all;
+}
+
+.svg-gear-grey {
+	background: url('data:image/svg+xml, %3Csvg%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20sketchtool%2046.1%20%2844463%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3E1CC2F420-9A1D-4A07-962D-3C479F9517E0%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20sketchtool.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Symbols%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Icon-%26amp%3B-Button-Style%22%20transform%3D%22translate%28-74.000000%2C%20-156.000000%29%22%3E%3C/g%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22ICON-/-GEAR-/-NORMAL%22%20stroke%3D%22%23666666%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M19.2501989%2C9.70625%20L18.7460075%2C8.48125%20C18.7460075%2C8.48125%2019.9195986%2C5.77375%2019.8168023%2C5.67%20L18.2626201%2C4.11875%20C18.153705%2C4.01125%2015.5030288%2C5.25%2015.5030288%2C5.25%20L14.2804871%2C4.74375%20C14.2804871%2C4.74375%2013.1999021%2C2%2013.0518265%2C2%20L10.8576149%2C2%20C10.7046442%2C2%209.70482776%2C4.75%209.70482776%2C4.75%20L8.48350976%2C5.25625%20C8.48350976%2C5.25625%205.77654041%2C4.08125%205.67252035%2C4.185%20L4.12078566%2C5.7375%20C4.01309429%2C5.84625%205.24909747%2C8.49875%205.24909747%2C8.49875%20L4.74368231%2C9.7225%20C4.74368231%2C9.7225%202%2C10.8%202%2C10.94625%20L2%2C13.14375%20C2%2C13.2975%204.74980114%2C14.2975%204.74980114%2C14.2975%20L5.2552163%2C15.51875%20C5.2552163%2C15.51875%204.0804014%2C18.22375%204.1831977%2C18.3275%20L5.73860368%2C19.8825%20C5.84384752%2C19.9875%208.49697118%2C18.75125%208.49697118%2C18.75125%20L9.72073671%2C19.2575%20C9.72073671%2C19.2575%2010.8013217%2C22%2010.9493973%2C22%20L13.1436089%2C22%20C13.2953558%2C22%2014.296396%2C19.25%2014.296396%2C19.25%20L15.5213853%2C18.74375%20C15.5213853%2C18.74375%2018.2222358%2C19.91875%2018.3274797%2C19.815%20L19.8828856%2C18.26375%20C19.9893532%2C18.155%2018.7533501%2C15.50375%2018.7533501%2C15.50375%20L19.2563177%2C14.28%20C19.2563177%2C14.28%2022%2C13.19875%2022%2C13.05125%20L22%2C10.85625%20C22%2C10.70375%2019.2501989%2C9.70625%2019.2501989%2C9.70625%20Z%20M15.2068776%2C12%20C15.2068776%2C13.7675%2013.7689531%2C15.20375%2012.0006119%2C15.20375%20C10.2347182%2C15.20375%208.7943462%2C13.7675%208.7943462%2C12%20C8.7943462%2C10.2325%2010.2347182%2C8.7975%2012.0006119%2C8.7975%20C13.7689531%2C8.7975%2015.2068776%2C10.2325%2015.2068776%2C12%20Z%22%20id%3D%22Page-1%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E')
+		center no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 20px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	left: 15px;
+}
+
+.svg-gear-grey:hover {
+	background: url('data:image/svg+xml, %3Csvg%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20sketchtool%2046.1%20%2844463%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3E1CC2F420-9A1D-4A07-962D-3C479F9517E0%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20sketchtool.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Symbols%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Icon-%26amp%3B-Button-Style%22%20transform%3D%22translate%28-74.000000%2C%20-156.000000%29%22%3E%3C/g%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22ICON-/-GEAR-/-NORMAL%22%20stroke%3D%22%2342B549%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M19.2501989%2C9.70625%20L18.7460075%2C8.48125%20C18.7460075%2C8.48125%2019.9195986%2C5.77375%2019.8168023%2C5.67%20L18.2626201%2C4.11875%20C18.153705%2C4.01125%2015.5030288%2C5.25%2015.5030288%2C5.25%20L14.2804871%2C4.74375%20C14.2804871%2C4.74375%2013.1999021%2C2%2013.0518265%2C2%20L10.8576149%2C2%20C10.7046442%2C2%209.70482776%2C4.75%209.70482776%2C4.75%20L8.48350976%2C5.25625%20C8.48350976%2C5.25625%205.77654041%2C4.08125%205.67252035%2C4.185%20L4.12078566%2C5.7375%20C4.01309429%2C5.84625%205.24909747%2C8.49875%205.24909747%2C8.49875%20L4.74368231%2C9.7225%20C4.74368231%2C9.7225%202%2C10.8%202%2C10.94625%20L2%2C13.14375%20C2%2C13.2975%204.74980114%2C14.2975%204.74980114%2C14.2975%20L5.2552163%2C15.51875%20C5.2552163%2C15.51875%204.0804014%2C18.22375%204.1831977%2C18.3275%20L5.73860368%2C19.8825%20C5.84384752%2C19.9875%208.49697118%2C18.75125%208.49697118%2C18.75125%20L9.72073671%2C19.2575%20C9.72073671%2C19.2575%2010.8013217%2C22%2010.9493973%2C22%20L13.1436089%2C22%20C13.2953558%2C22%2014.296396%2C19.25%2014.296396%2C19.25%20L15.5213853%2C18.74375%20C15.5213853%2C18.74375%2018.2222358%2C19.91875%2018.3274797%2C19.815%20L19.8828856%2C18.26375%20C19.9893532%2C18.155%2018.7533501%2C15.50375%2018.7533501%2C15.50375%20L19.2563177%2C14.28%20C19.2563177%2C14.28%2022%2C13.19875%2022%2C13.05125%20L22%2C10.85625%20C22%2C10.70375%2019.2501989%2C9.70625%2019.2501989%2C9.70625%20Z%20M15.2068776%2C12%20C15.2068776%2C13.7675%2013.7689531%2C15.20375%2012.0006119%2C15.20375%20C10.2347182%2C15.20375%208.7943462%2C13.7675%208.7943462%2C12%20C8.7943462%2C10.2325%2010.2347182%2C8.7975%2012.0006119%2C8.7975%20C13.7689531%2C8.7975%2015.2068776%2C10.2325%2015.2068776%2C12%20Z%22%20id%3D%22Page-1%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E')
+		center no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 20px;
+}
+/* Response template end*/

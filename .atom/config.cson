@@ -1,0 +1,134 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+    fuzzyMatch: true
+  "atom-beautify":
+    general:
+      _analyticsUserId: "206f6049-ec09-4846-897e-edfa03eb0fcd"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#607d8b"
+      accentColor: "#b27252"
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Blue Grey"
+    fonts:
+      fontSize: 14
+    tabs: {}
+    ui:
+      panelContrast: true
+      useAnimations: false
+  "atom-ternjs":
+    inlineFnCompletionDocumentation: true
+    useSnippetsAndFunction: true
+  "auto-semicolon":
+    cursor: false
+  "autocomplete-paths":
+    ignoreBuiltinScopes: true
+  "block-cursor":
+    global:
+      blinkOff: {}
+      blinkOn:
+        backgroundColor: "#ffffff"
+    mini:
+      blinkOn:
+        backgroundColor: "darkgrey"
+      selector: "atom-text-editor[mini]"
+    "no-focus":
+      blinkOn:
+        backgroundColor: "transparent"
+        borderColor: "white"
+        borderStyle: "bordered-box"
+        borderWidth: 1
+      selector: "atom-text-editor:not(.is-focused)"
+    "one-dark-syntax":
+      blinkOn:
+        backgroundColor: "lightgray"
+      selector: ".theme-one-dark-syntax atom-text-editor"
+    "one-light-syntax":
+      blinkOn:
+        backgroundColor: "darkgray"
+      selector: ".theme-one-light-syntax atom-text-editor"
+  core:
+    disabledPackages: [
+      "markdown-preview"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
+    packagesWithKeymapsDisabled: []
+    projectHome: "/Users/alvinlim/Documents/github"
+    reopenProjectMenuCount: 5
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
+    titleBar: "custom-inset"
+  editor:
+    fontFamily: "consolas"
+    fontSize: 13
+    preferredLineLength: 250
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  emmet: {}
+  "exception-reporting":
+    userId: "769252ba-c796-448d-b9d1-2e9bdbf7b430"
+  "file-icons":
+    strategies: {}
+  "go-plus":
+    format:
+      tool: "gofmt"
+  "language-babel":
+    autoIndentJSX: true
+  linter: {}
+  "linter-eslint": {}
+  "linter-jscs":
+    fixOnSave: true
+  "linter-ui-default":
+    panelHeight: 132
+    showPanel: true
+  minimap:
+    adjustAbsoluteModeHeight: true
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "minimap-git-diff": {}
+  pigments: {}
+  "platformio-ide-terminal":
+    core: {}
+    style:
+      animationSpeed: 0
+      defaultPanelHeight: "20%"
+      fontFamily: "consolas"
+      fontSize: "12"
+      theme: "one-dark"
+    toggles:
+      autoClose: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNoConfigFile: true
+      showInStatusBar: true
+    prettierEslintOptions:
+      prettierLast: true
+    prettierOptions:
+      jsxBracketSameLine: true
+      singleQuote: true
+      tabWidth: 4
+      trailingComma: "es5"
+    useEslint: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false

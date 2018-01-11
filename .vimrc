@@ -29,10 +29,13 @@ Plugin 'tpope/vim-surround'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jiangmiao/auto-pairs'
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'mileszs/ack.vim'
+Plugin 'terryma/vim-multiple-cursors'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -62,9 +65,10 @@ endtry
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-" autocmd VimEnter * so $MYVIMRC
+autocmd VimEnter * GitGutterEnable
 
 autocmd BufWinEnter * NERDTreeMirror
+autocmd BufWinEnter * set nofoldenable
 autocmd BufWritePre *.{js,jsx} ALEFix
 
 let g:NERDTreeWinPos = "left"
@@ -95,12 +99,14 @@ nnoremap <D-7> 7gt
 nnoremap <D-8> 8gt
 nnoremap <D-9> 9gt
 nnoremap <D-0> :tablast<cr>
+nnoremap <D-T> :tabnew#<cr>
 nnoremap ® :NERDTreeFind<cr>
 " nmap <D-s> <Plug>(Prettier) \| :w<CR>
 noremap <D-s> :ALEFix<CR> \| :w<CR>
 vnoremap <D-s> :ALEFix<CR> \| :w<CR>
 inoremap <D-s> :ALEFix<CR> \| :w<CR>
 nmap <D-w> :tabclose<cr>
+nnoremap <D-F> :Ack!<Space>
 " END OF KEYMAP
 
 " YCM
@@ -176,15 +182,35 @@ let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-semi'
 
 " ctrlp
-let g:ctrlp_use_caching = 0
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+" let g:ctrlp_use_caching = 0
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_max_files=0
-let g:ctrlp_working_path_mode = 'ra'
+" let g:ctrlp_max_files=0
+" let g:ctrlp_working_path_mode = 'ra'
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" GitGutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
+" Syntastic
+" let g:syntastic_loc_list_height = 3
+
+" Use Ag as default grep if available
+let g:ackprg = 'ag --nogroup --nocolor --column --ignore /node_modules'
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor\ --column
+  set grepformat=%f:%l:%c:%m
+  command! -nargs=+ -bang Ag silent! grep <args> | redraw! | botright copen
+endif
+
+" Multi cursor config
+let g:multi_cursor_next_key='<D-d>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " VIM
 let loaded_matchparen=1 " Don't load matchit.vim (paren/bracket matching)
